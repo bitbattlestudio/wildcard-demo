@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "tails-money",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "dist", "-l", "4200", "--no-clipboard"],
+      "port": 4200
+    }
+  ]
+}
