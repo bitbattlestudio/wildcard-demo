@@ -52,7 +52,7 @@ function writeNextCoinOutcome(result) {
 
 export default function App() {
   const ready = usePreloadAssets()
-  const [activeDemo, setActiveDemo] = React.useState(DemoTab.mobile)
+  const [activeDemo, setActiveDemo] = React.useState(DemoTab.pitchDeck)
   const [state, setState] = React.useState(DemoState.start)
   const [coinResultState, setCoinResultState] = React.useState(DemoState.doubleResult)
   const coinNextOutcomeRef = React.useRef(null)
