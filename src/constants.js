@@ -1,10 +1,10 @@
-import appIconGreen from '../wildcard-master-assets/app-icon-green.png'
-import cardGreenLite from '../wildcard-master-assets/card-green-lite.png'
-import wordmarkGreenLite from '../wildcard-master-assets/wordmark-green-lite.png'
-import wildcardCoinGreen from '../wildcard-master-assets/wildcard-coin-green.png'
-import wildcardMysteryBox from '../wildcard-master-assets/wildcard-mystery-box.png'
-import wildcardMysteryBoxOpen from '../wildcard-master-assets/wildcard-mystery-box-open.png'
-import wildcardPlayingCardGreen from '../wildcard-master-assets/wildcard-playing-card-green.png'
+import appIconGreen from '../wildcard-master-assets/purple/app-icon-purple.png'
+import cardGreenLite from '../wildcard-master-assets/purple/card-purple-lite.png'
+import wordmarkGreenLite from '../wildcard-master-assets/purple/wordmark-purple-lite.png'
+import wildcardCoinGreen from '../wildcard-master-assets/purple/wildcard-coin-purple.png'
+import wildcardMysteryBox from '../wildcard-master-assets/purple/wildcard-mystery-box-purple.png'
+import wildcardMysteryBoxOpen from '../wildcard-master-assets/purple/wildcard-mystery-box-purple-open.png'
+import wildcardPlayingCardGreen from '../wildcard-master-assets/purple/wildcard-playing-card-purple.png'
 
 export const DemoTab = {
   mobile: 'mobile',

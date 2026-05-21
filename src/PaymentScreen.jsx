@@ -1,9 +1,7 @@
 import React from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { ASSETS, SCREEN_TRANSITION } from './constants'
-import wordmarkBlackLite from '../wildcard-master-assets/wordmark-black-lite.png'
-import wildcardAsteriskBlack from '../wildcard-master-assets/wildcard-asterisk-black.png'
-import blurGradientWide from '../wildcard-master-assets/blur-gradient-wide.jpg'
+import wildCardDebitCardPurple from '../wildcard-master-assets/purple/wild-card-debit-card-purple.png'
 
 export default function PaymentScreen({
   phase,
@@ -88,20 +86,7 @@ export default function PaymentScreen({
         }}
         transition={{ type: 'spring', stiffness: 155, damping: 22, mass: 1 }}
       >
-        <div className="generic-card wildcard-credit-card" style={{ '--wildcard-card-bg': `url(${blurGradientWide})` }}>
-          <img className="wildcard-card-brand" src={wordmarkBlackLite} alt="wildcard" />
-          <img className="wildcard-card-asterisk" src={wildcardAsteriskBlack} alt="" aria-hidden="true" />
-          <div className="wildcard-card-chip" aria-hidden="true">
-            <span />
-            <span />
-            <span />
-          </div>
-          <div className="generic-card-number wildcard-card-number">•••• 2048</div>
-          <div className="generic-card-visa wildcard-card-network">
-            <span>CREDIT</span>
-            <strong>VISA</strong>
-          </div>
-        </div>
+        <img className="payment-wildcard-card-img" src={wildCardDebitCardPurple} alt="wildcard debit card" />
       </motion.div>
 
       {isProcessing && (

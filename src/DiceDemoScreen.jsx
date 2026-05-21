@@ -130,7 +130,7 @@ export default function DiceDemoScreen({ phase, messageIndex, onBuyBox, onConfir
                     y: [0, -16, -8, -20, 0],
                     scale: [1, 1.08, 1.12, 1.02],
                     filter: [
-                      'drop-shadow(0 18px 24px rgba(132, 255, 183, 0.18))',
+                      'drop-shadow(0 18px 24px rgba(185, 120, 255, 0.22))',
                       'drop-shadow(0 0 42px rgba(250, 255, 92, 0.6))',
                       'drop-shadow(0 0 60px rgba(180, 255, 98, 0.7))',
                       'drop-shadow(0 0 40px rgba(255, 255, 255, 0.42))',

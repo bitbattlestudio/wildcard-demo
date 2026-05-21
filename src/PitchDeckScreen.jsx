@@ -1,21 +1,21 @@
 import React from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ASSETS } from './constants'
-import cardGreenFull from '../wildcard-master-assets/card-green-full.png'
-import wildCardDebitCard1 from '../wildcard-master-assets/wild-card-debit-card-1.png'
+import cardGreenFull from '../wildcard-master-assets/purple/card-purple-full.png'
+import wildCardDebitCard1 from '../wildcard-master-assets/purple/wild-card-debit-card-purple.png'
 import wildcardAsteriskBlack from '../wildcard-master-assets/wildcard-asterisk-black.png'
 import wildcardAsteriskArrowBlack from '../wildcard-master-assets/wildcard-asterisk-arrow-black.png'
-import wildcardRealLife1 from '../wildcard-master-assets/wildcard-reallife-1.png'
-import wildcardRealLife3 from '../wildcard-master-assets/wildcard-reallife-3.png'
-import wordmarkGreenLite from '../wildcard-master-assets/wordmark-green-lite.png'
-import appIconGreen from '../wildcard-master-assets/app-icon-green.png'
+import wildcardRealLife1 from '../wildcard-master-assets/purple/wildcard-reallife-1-purple.png'
+import wildcardRealLife3 from '../wildcard-master-assets/purple/wildcard-reallife-1-purple.png'
+import wordmarkGreenLite from '../wildcard-master-assets/purple/wordmark-purple-lite.png'
+import appIconGreen from '../wildcard-master-assets/purple/app-icon-purple.png'
 import cardGlassLite from '../wildcard-master-assets/card-glass-lite.png'
-import cardBlackFull from '../wildcard-master-assets/card-black-full.png'
-import wildcardMysteryBox from '../wildcard-master-assets/wildcard-mystery-box.png'
-import wildcardPlayingCardGreen from '../wildcard-master-assets/wildcard-playing-card-green.png'
-import wildcardCoinGreen from '../wildcard-master-assets/wildcard-coin-green.png'
-import wildcardSmileGreen from '../wildcard-master-assets/wild-card-smile-green.png'
-import greenGradientCircle from '../wildcard-master-assets/green-gradient-circle.png'
+import cardBlackFull from '../wildcard-master-assets/purple/card-black-purple-full.png'
+import wildcardMysteryBox from '../wildcard-master-assets/purple/wildcard-mystery-box-purple.png'
+import wildcardPlayingCardGreen from '../wildcard-master-assets/purple/wildcard-playing-card-purple.png'
+import wildcardCoinGreen from '../wildcard-master-assets/purple/wildcard-coin-purple.png'
+import wildcardSmileGreen from '../wildcard-master-assets/purple/wild-card-smile-purple.png'
+import greenGradientCircle from '../wildcard-master-assets/purple/purple-gradient-circle.png'
 import starbucksLogo from '../wildcard-master-assets/starbucks-logo.png'
 import sevenElevenLogo from '../wildcard-master-assets/7-eleven-logo.png'
 import chipotleLogo from '../wildcard-master-assets/chipotle-logo.png'
@@ -139,7 +139,7 @@ const slideTx = { duration: 0.42, ease: [0.22, 1, 0.36, 1] }
 const SPINNER_DURATION = 4.8
 const SPINNER_HOLD = 0.85
 const SPINNER_LOGO_IDLE_SHADOW = '0 8px 16px rgba(0, 0, 0, 0.24), inset 0 1px 0 rgba(255, 255, 255, 0.16)'
-const SPINNER_LOGO_ACTIVE_SHADOW = '0 0 0 3px rgba(255, 255, 255, 0.78), 0 0 24px rgba(116, 247, 189, 0.9), 0 10px 20px rgba(0, 0, 0, 0.24)'
+const SPINNER_LOGO_ACTIVE_SHADOW = '0 0 0 3px rgba(255, 255, 255, 0.78), 0 0 24px rgba(185, 120, 255, 0.9), 0 10px 20px rgba(0, 0, 0, 0.24)'
 
 const spinnerMerchants = [
   { merchant: 'Coffee', logo: starbucksLogo, className: 'is-starbucks' },
@@ -619,7 +619,7 @@ function FutureGamesSlide({ slide }) {
                       <rect width="76" height="92" rx="14" fill={`url(#scratchTexture-${index})`} mask={`url(#scratchMask-${index})`} />
                       <motion.circle
                         r="8"
-                        fill="#c7ffdf"
+                        fill="#f3dcff"
                         stroke="#06120d"
                         strokeWidth="2"
                         animate={{
@@ -639,8 +639,8 @@ function FutureGamesSlide({ slide }) {
                         animate={{ opacity: [0, 0, 1, 1, 0] }}
                         transition={{ duration: 5.2, repeat: Infinity, ease: 'easeInOut', times: [0, 0.2, 0.48, 0.82, 1], delay: index * 0.36 }}
                       >
-                        <path d="M14 22 C28 14 48 18 65 12" stroke="rgba(199,255,223,0.45)" strokeWidth="2" strokeLinecap="round" fill="none" />
-                        <path d="M9 56 C28 48 45 62 67 51" stroke="rgba(199,255,223,0.34)" strokeWidth="2" strokeLinecap="round" fill="none" />
+                        <path d="M14 22 C28 14 48 18 65 12" stroke="rgba(243,220,255,0.45)" strokeWidth="2" strokeLinecap="round" fill="none" />
+                        <path d="M9 56 C28 48 45 62 67 51" stroke="rgba(243,220,255,0.34)" strokeWidth="2" strokeLinecap="round" fill="none" />
                       </motion.g>
                     </motion.svg>
                   </div>

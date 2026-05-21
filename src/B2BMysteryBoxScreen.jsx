@@ -196,7 +196,7 @@ export default function B2BMysteryBoxScreen({ phase, onBuyBox, onToggleCheckoutC
                       scale: [1, 1.06, 1.12, 1.02],
                       y: [0, -8, -18, -10, 0],
                       filter: [
-                        'drop-shadow(0 18px 24px rgba(132, 255, 183, 0.18))',
+                        'drop-shadow(0 18px 24px rgba(185, 120, 255, 0.22))',
                         'drop-shadow(0 0 42px rgba(250, 255, 92, 0.6))',
                         'drop-shadow(0 0 60px rgba(180, 255, 98, 0.7))',
                         'drop-shadow(0 0 40px rgba(255, 255, 255, 0.42))',
