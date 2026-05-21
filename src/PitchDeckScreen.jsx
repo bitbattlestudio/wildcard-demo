@@ -6,7 +6,7 @@ import wildCardDebitCard1 from '../wildcard-master-assets/purple/wild-card-debit
 import wildcardAsteriskBlack from '../wildcard-master-assets/wildcard-asterisk-black.png'
 import wildcardAsteriskArrowBlack from '../wildcard-master-assets/wildcard-asterisk-arrow-black.png'
 import wildcardRealLife1 from '../wildcard-master-assets/purple/wildcard-reallife-1-purple.png'
-import wildcardRealLife3 from '../wildcard-master-assets/purple/wildcard-reallife-1-purple.png'
+import wildcardRealLife3 from '../wildcard-master-assets/purple/wildcard-reallife-2-purple.png'
 import wordmarkGreenLite from '../wildcard-master-assets/purple/wordmark-purple-lite.png'
 import appIconGreen from '../wildcard-master-assets/purple/app-icon-purple.png'
 import cardGlassLite from '../wildcard-master-assets/card-glass-lite.png'
