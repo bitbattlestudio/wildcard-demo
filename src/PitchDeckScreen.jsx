@@ -16,6 +16,7 @@ import wildcardPlayingCardGreen from '../wildcard-master-assets/purple/wildcard-
 import wildcardCoinGreen from '../wildcard-master-assets/purple/wildcard-coin-purple.png'
 import wildcardSmileGreen from '../wildcard-master-assets/purple/wild-card-smile-purple.png'
 import greenGradientCircle from '../wildcard-master-assets/purple/purple-gradient-circle.png'
+import purpleAdSecretLevel from '../wildcard-master-assets/purple/purple-ad-secret-level.jpg'
 import starbucksLogo from '../wildcard-master-assets/starbucks-logo.png'
 import sevenElevenLogo from '../wildcard-master-assets/7-eleven-logo.png'
 import chipotleLogo from '../wildcard-master-assets/chipotle-logo.png'
@@ -115,6 +116,13 @@ const BASE_SLIDES = [
     section: '07',
     accent: 'green',
     title: 'The wildcard ecosystem',
+  },
+  {
+    id: 'gamify-moments',
+    type: 'image-only',
+    accent: 'purple',
+    image: purpleAdSecretLevel,
+    imageAlt: 'Every tap has a secret level wildcard ad',
   },
 ]
 
@@ -366,6 +374,14 @@ function ContentSlide({ slide }) {
           <img src={slide.image} alt={slide.imageAlt} className="pitch-media-image" />
         </div>
       </div>
+    </div>
+  )
+}
+
+function ImageOnlySlide({ slide }) {
+  return (
+    <div className="pitch-image-only">
+      <img src={slide.image} alt={slide.imageAlt} className="pitch-image-only-media" />
     </div>
   )
 }
@@ -1373,6 +1389,7 @@ export default function PitchDeckScreen() {
               {slide?.type === 'plugin-capabilities' && <PluginCapabilitiesSlide slide={slide} />}
               {slide?.type === 'guaranteed-win' && <GuaranteedWinSlide slide={slide} />}
               {slide?.type === 'content'   && <ContentSlide  slide={slide} />}
+              {slide?.type === 'image-only' && <ImageOnlySlide slide={slide} />}
               {slide?.type === 'metrics'   && <MetricsSlide  slide={slide} />}
               {slide?.type === 'refund-flow' && <RefundFlowSlide slide={slide} />}
               {slide?.type === 'steps'     && <StepsSlide    slide={slide} />}
