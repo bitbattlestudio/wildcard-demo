@@ -11,16 +11,41 @@ import wordmarkGreenLite from '../wildcard-master-assets/purple/wordmark-purple-
 import appIconGreen from '../wildcard-master-assets/purple/app-icon-purple.png'
 import cardGlassLite from '../wildcard-master-assets/card-glass-lite.png'
 import cardBlackFull from '../wildcard-master-assets/purple/card-black-purple-full.png'
+import cardBlackChromeLite from '../wildcard-master-assets/purple/card-black-chrome-lite.png'
+import wordmarkChrome from '../wildcard-master-assets/purple/wordmark-chrome.png'
+import appIconChrome from '../wildcard-master-assets/purple/app-icon-chrome.png'
+import asteriskChrome from '../wildcard-master-assets/purple/asterisk-chrome.png'
+import wildcardCoinBlack from '../wildcard-master-assets/purple/wildcard-coin-black.png'
+import wildcardMysteryBoxBlack from '../wildcard-master-assets/purple/wildcard-mystery-box-black.png'
 import wildcardMysteryBox from '../wildcard-master-assets/purple/wildcard-mystery-box-purple.png'
 import wildcardPlayingCardGreen from '../wildcard-master-assets/purple/wildcard-playing-card-purple.png'
 import wildcardCoinGreen from '../wildcard-master-assets/purple/wildcard-coin-purple.png'
 import wildcardSmileGreen from '../wildcard-master-assets/purple/wild-card-smile-purple.png'
 import greenGradientCircle from '../wildcard-master-assets/purple/purple-gradient-circle.png'
 import purpleAdSecretLevel from '../wildcard-master-assets/purple/purple-ad-secret-level.jpg'
+import purpleAdBoat from '../wildcard-master-assets/purple/purple-ad-boat.png'
 import starbucksLogo from '../wildcard-master-assets/starbucks-logo.png'
 import sevenElevenLogo from '../wildcard-master-assets/7-eleven-logo.png'
 import chipotleLogo from '../wildcard-master-assets/chipotle-logo.png'
 import parkingLogo from '../wildcard-master-assets/parking-logo.png'
+
+const COVER_CARD_STORAGE_KEY = 'wildcard_cover_card_index_v1'
+const COVER_CARD_IMAGES = [
+  { src: cardGreenFull, alt: 'wildcard purple card' },
+  { src: cardBlackFull, alt: 'wildcard black purple card' },
+  { src: cardBlackChromeLite, alt: 'wildcard black chrome card' },
+]
+
+function getCoverCardForLoad() {
+  if (typeof window === 'undefined') return COVER_CARD_IMAGES[0]
+
+  const storedIndex = Number.parseInt(window.localStorage.getItem(COVER_CARD_STORAGE_KEY) || '0', 10)
+  const index = Number.isFinite(storedIndex) ? storedIndex % COVER_CARD_IMAGES.length : 0
+  window.localStorage.setItem(COVER_CARD_STORAGE_KEY, String((index + 1) % COVER_CARD_IMAGES.length))
+  return COVER_CARD_IMAGES[index]
+}
+
+const coverCardForLoad = getCoverCardForLoad()
 
 /* ── Slide data ─────────────────────────────────────────────────────────── */
 const BASE_SLIDES = [
@@ -123,6 +148,13 @@ const BASE_SLIDES = [
     accent: 'purple',
     image: purpleAdSecretLevel,
     imageAlt: 'Every tap has a secret level wildcard ad',
+  },
+  {
+    id: 'boat-ad',
+    type: 'image-only',
+    accent: 'purple',
+    image: purpleAdBoat,
+    imageAlt: 'wildcard purple boat ad',
   },
 ]
 
@@ -256,8 +288,8 @@ function CoverSlide() {
       <div className="pitch-cover-orb pitch-cover-orb-c" />
       <div className="pitch-cover-inner">
         <motion.img
-          src={cardGreenFull}
-          alt="wildcard play every purchase card"
+          src={coverCardForLoad.src}
+          alt={coverCardForLoad.alt}
           className="pitch-cover-card"
           initial={{ scale: 0.8, opacity: 0, y: 24, rotate: -5 }}
           animate={{
@@ -397,6 +429,12 @@ function BrandSlide({ slide }) {
     { src: wildcardAsteriskBlack, alt: 'wildcard asterisk', className: 'is-asterisk' },
     { src: cardBlackFull, alt: 'wildcard black card', className: 'is-card is-card-black-full' },
     { src: wildcardSmileGreen, alt: 'wildcard smile mark', className: 'is-smile' },
+    { src: cardBlackChromeLite, alt: 'wildcard black chrome card', className: 'is-card is-card-chrome-lite' },
+    { src: wordmarkChrome, alt: 'wildcard chrome wordmark', className: 'is-wordmark is-wordmark-chrome' },
+    { src: appIconChrome, alt: 'wildcard chrome app icon', className: 'is-icon is-icon-chrome' },
+    { src: wildcardCoinBlack, alt: 'wildcard black coin', className: 'is-coin is-coin-black' },
+    { src: wildcardMysteryBoxBlack, alt: 'wildcard black mystery box', className: 'is-box is-box-black' },
+    { src: asteriskChrome, alt: 'wildcard chrome asterisk', className: 'is-asterisk is-asterisk-chrome' },
   ]
 
   return (

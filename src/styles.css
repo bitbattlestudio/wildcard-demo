@@ -6540,12 +6540,14 @@ img {
 }
 
 .pitch-brand-asset.is-asterisk::before,
-.pitch-brand-asset.is-card-black-full::before {
+.pitch-brand-asset.is-card-black-full::before,
+.pitch-brand-asset.is-card-chrome-lite::before,
+.pitch-brand-asset.is-icon-chrome::before {
   content: "";
   position: absolute;
   inset: -22%;
   border-radius: inherit;
-  background: radial-gradient(circle, rgba(185, 120, 255, 0.62), rgba(139, 92, 246, 0.26) 42%, transparent 72%);
+  background: radial-gradient(circle, rgba(220, 198, 255, 0.48), rgba(139, 92, 246, 0.24) 42%, transparent 72%);
   filter: blur(16px);
   z-index: -1;
 }
@@ -6566,9 +6568,17 @@ img {
   aspect-ratio: 1.75;
 }
 
+.pitch-brand-asset.is-card-chrome-lite {
+  width: 250px;
+}
+
 .pitch-brand-asset.is-wordmark {
   width: 250px;
   height: 78px;
+}
+
+.pitch-brand-asset.is-wordmark-chrome {
+  width: 220px;
 }
 
 .pitch-brand-asset.is-icon,
@@ -6587,6 +6597,10 @@ img {
   aspect-ratio: 1;
 }
 
+.pitch-brand-asset.is-box-black {
+  width: 142px;
+}
+
 .pitch-brand-asset.is-playing-card {
   width: 146px;
   aspect-ratio: 0.68 / 1;
@@ -6595,6 +6609,10 @@ img {
 .pitch-brand-asset.is-coin {
   width: 126px;
   aspect-ratio: 1;
+}
+
+.pitch-brand-asset.is-coin-black {
+  width: 108px;
 }
 
 .pitch-brand-asset-1 { left: 0%; top: 4%; rotate: -8deg; }
@@ -6606,6 +6624,12 @@ img {
 .pitch-brand-asset-7 { left: 30%; top: 3%; rotate: -10deg; }
 .pitch-brand-asset-8 { left: 27%; bottom: 1%; rotate: 5deg; }
 .pitch-brand-asset-9 { left: 58%; top: 3%; rotate: 8deg; }
+.pitch-brand-asset-10 { left: 60%; bottom: 0%; rotate: -7deg; }
+.pitch-brand-asset-11 { left: 42%; top: 1%; rotate: 3deg; }
+.pitch-brand-asset-12 { left: 16%; top: 19%; rotate: -7deg; }
+.pitch-brand-asset-13 { left: 71%; bottom: 20%; rotate: 10deg; }
+.pitch-brand-asset-14 { left: 13%; bottom: 18%; rotate: -9deg; }
+.pitch-brand-asset-15 { left: 68%; top: 19%; rotate: 12deg; }
 
 .pitch-brand-center {
   position: relative;
